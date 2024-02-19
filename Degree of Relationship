@@ -1,0 +1,4 @@
+Cardialinity is how the entities are connected to each other (Relationship)
+
+#1. One to One Relationship(O-O)
+    Two entities are associated with each other only with 1(one) relation
