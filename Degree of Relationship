@@ -2,3 +2,8 @@ Cardialinity is how the entities are connected to each other (Relationship)
 
 #1. One to One Relationship(O-O)
     Two entities are associated with each other only with 1(one) relation
+    Eg.One emplyee can have only one department
+        -Here Employee is an entity and Department is an Entity and they are connected with each othe by One to One Relationship.
+        -In employee table we will give Emp_id as PK and in Department table we will give Dept_id as primary key
+        -And while creating their relationship table or diagram we will take those primary keys as ForeignKey and then assign one employee to
+         one Department.
