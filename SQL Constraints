@@ -9,3 +9,48 @@ They can be column level or table level
 #4. FOREIGN KEY - Prevents actions that would destroy links between tables
 #5. CHECK - Ensures that the values in a column satisfies a specific condition
 #6. DEFAULT - Sets a default value for a column if no value is specified
+
+
+Interview Questions:
+1). Define Constraints?
+    ->A constraint is a table column property with performs data validation.
+    Using constraints, you can maintain data integrity by preventing invalid data from being entered.
+
+2). What do you understand by Data integrity?
+    ->Data integrity is the consistency and accuracy of the data which is stored in a database.
+
+3). Can you add constraints to a table that already has data?
+    ->Yes, But it also depend on data, like if a column containing null values and you adding not null constraint,
+    then first you need to replace all null with some values.
+
+4). How many primary keys can exist on a table? 
+    ->One
+
+5). What is a Foeign Key?
+    ->A FK in one table points to a PK in another table
+      It prevents any actions that would destroy links between tables with the corresponding data values
+      FK are used to enforce referential integrity
+
+6). Difference between Primary key and Unique key constraints?
+    ->1) Unique constraints will allow a null value. If a field is nullable then a unique constraint will allow at most one null value.
+          Whereas the Primary key will not allow any null value.
+      2) SQL server allows many unique constraints per table where it allows just primary key per table.
+
+7). Can we apply Uniquey key constraints on multiple columns?
+    ->Yes! Unique key constraints can be applied on a composit of multiple fields to ensure quiqueness of records.
+      Example : City + State in the StateList table
+
+8). When you create an Unique key constraints then by default which index will be created by DB?
+    ->Nonclustered index would be created automatically when you will create a unique key constraints.
+
+9). When you create an Primary key constraints then by default which index will be created by DB?
+    ->Clustered index would be created automatically when you will create a Primary key constraints.
+
+10). What do you understand by Default constraints?
+    ->A default constraint enters a value in a column when one is not specified in the Insert or Update statement.
+
+11). What are the type of data integrity?
+    ->In relational database, there are three type of integrity
+        1. Domain Integrity( data type, check constraints)
+        2. Entity Integrity (primary key, unique constraints)
+        3. Referential Integrity (handled by foregn key constraints)
