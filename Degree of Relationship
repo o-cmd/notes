@@ -7,3 +7,33 @@ Cardialinity is how the entities are connected to each other (Relationship)
         -In employee table we will give Emp_id as PK and in Department table we will give Dept_id as primary key
         -And while creating their relationship table or diagram we will take those primary keys as ForeignKey and then assign one employee to
          one Department.
+
+    For Eg. If we have to create such thing ind Sql then 
+
+                                    CREATE TABLE Person (
+                                    PersonID INT PRIMARY KEY,
+                                    FirstName VARCHAR(50),
+                                    LastName VARCHAR(50),
+                                    Gender CHAR(1),
+                                    DateOfBirth DATE
+                                )
+                                CREATE TABLE Address (
+                                    AddressID INT PRIMARY KEY,
+                                    StreetAddress VARCHAR(100),
+                                    City VARCHAR(50),
+                                    State VARCHAR(50),
+                                    ZipCode VARCHAR(10),
+                                    PersonID INT
+                                )
+
+        #For giving reference of Person table we have to add Foreign key constraint to the second table with the primary key column of First table
+                                ALTER TABLE Address
+                                ADD CONSTRAINT uq_personid UNIQUE (PersonID);
+                                
+                                ALTER TABLE Address
+                                ADD CONSTRAINT FK_Address_Person
+                                FOREIGN KEY (PersonID)
+                                REFERENCES Person(PersonID)
+
+
+
