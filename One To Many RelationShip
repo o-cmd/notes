@@ -1,0 +1,5 @@
+### One to Many Relationship
+
+One-to-Many is the most commonly used relationship among tables. A single record from one table can be linked to zero or more rows in another table.
+A one-to-many relationship occurs when one record in table 1 is related to one or more records in table 2
+However, one record in table 2 cannot be related to more than one record in table 1
