@@ -8,4 +8,25 @@ However, one record in table 2 cannot be related to more than one record in tabl
             with multiple Orders.But 1 order can only belong to only one customer 
 
 
+                                            CREATE TABLE Customer (
+                                            CustomerID INT PRIMARY KEY,
+                                            FirstName VARCHAR(50),
+                                            LastName VARCHAR(50),
+                                            Email VARCHAR(100),
+                                            Phone VARCHAR(20)
+                                        )
+                                        
+                                        CREATE TABLE Orders (
+                                            OrderID INT PRIMARY KEY,
+                                            OrderDate varchar(100),
+                                            TotalAmount MONEY,
+                                            CustomerID INT
+                                        )
+
+            # Adding Foreign key constraint in Orders Table by taking CustomerId as reference from the customer table.
+                                        ALTER TABLE Orders
+                                        ADD CONSTRAINT FK_Order_Customer
+                                        FOREIGN KEY (CustomerID)
+                                        REFERENCES Customer(CustomerID)
+
 
