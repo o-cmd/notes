@@ -1,0 +1,20 @@
+Q 1. What is cardinality? 
+    ->One to One, One to many, and many to many are diﬀerent types of cardinalities. In adatabase, 
+      high cardinality means more unique values are stored in a column and viceversa.
+
+Q 2. What Does ERD Stand for, and What is it?
+    ->ERD stands for Entity Relationship Diagram and is a logical entity representation,deﬁning the relationships between the entities. 
+      Entities reside in boxes, and arrowssymbolize relationships
+
+Q 3.How is the degree assigned to a relationship?
+    ->Depending upon the number of entities involved, a degree is assigned to relationships
+
+Q 4.What Is a One-to-One Relationship in a Database?
+    ->It’s a relationship where a record in one entity (table) is associated with exactly one record in another entity (table)
+
+Q 5.What Is a One-to-Many Relationship in a Database?
+    ->A one-to-many relationship occurs when one record in table 1 is related to one or more records in table 2. 
+      However, one record in table 2 cannot be related to more than one record in table 1.
+
+Q 6.What Is a Many-to-Many Relationship in a Database?
+    ->A many-to-many relationship exists when one or more items in one table can have a relationship to one or more items in another table
