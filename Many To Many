@@ -1,0 +1,32 @@
+Many To Many Realtionships between Tabls
+
+-Many-to-many relationships are the most commonly used table relationships
+-A many-to-many relationship exists when one or more items in one table can have a relationship to one or more items in another table
+For Eg.
+      -Your Order table contains orders placed by multiple customers (who are listed in the Customers table), and a customer may place more than one order
+      -Your Products table contains the individual products you sell, which are part of many orders in the Order table
+      -One order may include one instance (or more than one instance) of a specific product and/or one instance (or more than one instance) of multiple products.
+
+                                                       
+
+                                                      CREATE TABLE Student (
+                                                      StudentID INT PRIMARY KEY,
+                                                      FirstName VARCHAR(50),
+                                                      LastName VARCHAR(50),
+                                                      Email VARCHAR(100),
+                                                      Phone VARCHAR(20)
+                                                  )
+                                                  
+                                                  CREATE TABLE Course (
+                                                      CourseID INT PRIMARY KEY,
+                                                      CourseName VARCHAR(50),
+                                                      Credits INT
+                                                  )
+                                                  
+                                                  CREATE TABLE StudentCourse (
+                                                      StudentID INT,
+                                                      CourseID INT,
+                                                      PRIMARY KEY (StudentID, CourseID),
+                                                      FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+                                                      FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+                                                  )
