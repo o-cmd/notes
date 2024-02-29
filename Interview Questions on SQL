@@ -1,0 +1,16 @@
+Q1. What are SQL operators?
+  ->SQL operators are the special keywords or characters that perform specific operations. They are also used in SQL queries. 
+    These operators can be used within the WHERE clause of SQL commands. Based on the specified condition, SQL operators filter the data.
+    1.Arithmetic Operators:For mathematical operations on numerical data
+      addition (+),subtraction (-),multiplication (*),division (/),remainder/modulus (%)
+    2.Logical Operators: For evaluating the expressions and returning results in True or False
+      ALL,AND,ANY,ISNULL,EXISTS,BETWEEN,IN,LIKE,NOT,OR,UNIQUE
+
+Q2.What do you mean by data integrity?
+  ->Data integrity is the assurance of the accuracy and consistency of data over its whole life cycle. 
+    It is a critical aspect of the design, implementation, and usage of systems that store, process, or retrieve data.
+
+Q3.What is a data warehouse?
+  ->A data warehouse is a large store of accumulated data, from a wide range of sources, within an organization. The data helps drive business decisions.
+
+Q4.
